@@ -15,6 +15,7 @@ router.post("/profile", function(req, res, next) {
     var conditions = { _id: user._id }
     var update = {
         email: req.body.email,
+        phoneNumber: req.body.phoneNumber,
         firstName: req.body.fname,
         lastName: req.body.lname
     }

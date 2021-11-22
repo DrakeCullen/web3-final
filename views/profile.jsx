@@ -12,6 +12,7 @@ class Profile extends React.Component {
       title: props.title,
       msg: "",
       email: props.user.email,
+      phoneNumber: props.user.phoneNumber,
       firstName: props.user.firstName,
       lastName: props.user.lastName,
     };
@@ -31,6 +32,10 @@ class Profile extends React.Component {
               <Form.Group>
                 <Form.Label className="mt-3">Email</Form.Label>
                 <Form.Control type="text" name="email" required value={this.state.email} onChange={this.handleInputChange} />
+              </Form.Group>
+              <Form.Group>
+                <Form.Label className="mt-3">Phone Number</Form.Label>
+                <Form.Control type="text" name="phoneNumber" required value={this.state.phoneNumber} onChange={this.handleInputChange} />
               </Form.Group>
               <Form.Group>
                 <Form.Label className="mt-3">First Name</Form.Label>
@@ -72,6 +77,7 @@ class Profile extends React.Component {
         },
         body: JSON.stringify({
           email: this.state.email,
+          phoneNumber: this.state.phoneNumber,
           fname: this.state.firstName,
           lname: this.state.lastName
         }),
@@ -81,6 +87,7 @@ class Profile extends React.Component {
         this.setState({
           msg: json.msg,
           email: json.email,
+          phoneNumber: json.phoneNumber,
           firstName: json.firstName,
           lastName: json.lastName,
         });

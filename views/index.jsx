@@ -8,11 +8,12 @@ import Posts from './components/posts';
 
 
 
+
 function Index(props) {
   return (
     <Layout title={props.title}>
       <Banner />
-      <Posts posts={props.posts} action="/login" phrase='View Post'/>
+      <Posts posts={props.posts} url="/login" action="/login" phrase='Send Message'/>
     </Layout>
   );
 }

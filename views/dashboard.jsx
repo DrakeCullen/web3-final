@@ -6,12 +6,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Posts from './components/posts';
 
+
 function Dashboard(props) {
   //let posts = <PostsTable posts={props.posts} />
   return (
     <Layout title={props.title}>
-      <Banner name={props.user.firstName} desc="Dashboard - Here you will find other users' posts!" />
-      <Posts posts={props.posts} action="/otherUser" phrase='View Post'/>
+      <Banner name={props.user.firstName} desc="Dashboard" />
+      <Posts posts={props.posts} action="/sms" phrase='Send Message'/>
     </Layout>
   );
 }

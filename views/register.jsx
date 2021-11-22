@@ -28,6 +28,10 @@ function Register(props) {
               <Form.Control type='text' name="email" required placeholder="Email" value={(props.email) ? props.email : null}/>
             </Form.Group>
             <Form.Group>
+              <Form.Label className="mt-3">Phone Number</Form.Label>
+              <Form.Control type='text' name="phoneNumber" required placeholder="9703824837" value={(props.phoneNumber) ? props.phoneNumber : null}/>
+            </Form.Group>
+            <Form.Group>
               <Form.Label className="mt-3">Password</Form.Label>
               <Form.Control type="password" name="password" required placeholder="**********" value={(props.password) ? props.password : null}/>
             </Form.Group>

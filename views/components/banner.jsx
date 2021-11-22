@@ -21,8 +21,8 @@ export default function banner() {
         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
           <div className='d-flex justify-content-center align-items-center h-100'>
             <div className='text-white'>
-              <h1 className='mb-3'>Lost and Found</h1>
-              <h4 className='mb-3'>Find your lost items instantly online!</h4>
+              <h1 className='mb-3'>Text Message Assistant</h1>
+              <h4 className='mb-3'>Send a text message with the click of a button!</h4>
             </div>
           </div>
         </div>

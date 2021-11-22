@@ -37,17 +37,17 @@ export default function authentNavbar() {
               </MDBNavbarItem>
               <MDBNavbarItem active>
                 <MDBNavbarLink className="py-0 my-0" aria-current='page' href='/post' style={{ color: "black", fontSize: "1.5vw" }}>
-                |  New Post
+                |  New Alert
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem active>
                 <MDBNavbarLink className="py-0 my-0" aria-current='page' href='/userPosts' style={{ color: "black", fontSize: "1.5vw" }}>
-                |  Edit Posts
+                |  Edit Alerts
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem active>
                 <MDBNavbarLink className="py-0 my-0" aria-current='page' href='/deletePost' style={{ color: "black", fontSize: "1.5vw" }}>
-                |  Delete Posts
+                |  Delete Alerts
                 </MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>

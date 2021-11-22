@@ -23,31 +23,17 @@ class item extends React.Component {
       this.posts = this.props.posts;
       this.action = this.props.action;
       this.phrase = this.props.phrase;
-      if (typeof window !== 'undefined') {
-        this.window = "why"
-      } else {
-        global.window = {}
-      }
-      var synth = global.window.speechSynthesis;
-      var utterThis = new SpeechSynthesisUtterance("h");
-      synth.speak(utterThis);
     }
-
-    componentWillMount() {
-      
-  }
 
     render() {
       let src = this.posts.img.replaceAll('&#x2F;', '/')
-      let al = `console.log(${window})`
-      let img = `<img className="ml-1 mr-1 mt-auto" top width="100%" src=${src} onClick=${al} ></img>`
+      let img = `<img className="ml-1 mr-1 mt-auto"  width="100%" style="height:300px" src=${src} ></img>`
       return (
-        <Card style={{ flex: 1 }} className="mx-4 my-5">
-            {/*<Card.Img className="ml-1 mr-1 mt-auto" top width="100%" src={this.posts.img.replaceAll('&#x2F;', '/')} /> */}
+        <Card style={{ flex: 1 }} className="mx-4 my-5 d-flex flex-column">
             <Card.Body>
             <div dangerouslySetInnerHTML={{__html: img}} />
-                <Card.Title>{this.posts.title}</Card.Title>
-                <Button href={`${this.action}/${this.posts._id}`}>{this.phrase}</Button>
+                <Card.Title className="align-self-end">{this.posts.title}</Card.Title>
+                <Button className="align-self-end" href={`${this.action}/${this.posts._id ? this.posts._id : ''}`}>{this.phrase}</Button>
             </Card.Body>
         </Card>
       );

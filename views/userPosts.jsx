@@ -9,7 +9,7 @@ import Posts from './components/posts';
 function userPosts(props) {
   return (
     <Layout title={props.title}>
-      <Banner name={props.user.firstName} desc="Edit any of your posts below!"/>
+      <Banner name={props.user.firstName} desc="Edit any of your alerts below!"/>
       <Posts posts={props.posts} url='post' action="/post" phrase='Edit Post'/>
     </Layout>
   );

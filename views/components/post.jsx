@@ -21,7 +21,7 @@ function post(props) {
                     <Form method="POST" style={{ width: '300px' }} action={action}>
                         <Form.Group>
                             <Form.Label >Title</Form.Label>
-                            <Form.Control type='text' required placeholder="Lost Blue Hydroflask" name="title" value={(props.post.title) ? props.post.title : null} />
+                            <Form.Control type='text' required placeholder="Play" name="title" value={(props.post.title) ? props.post.title : null} />
                         </Form.Group>
                         <Form.Group>
                             <Form.Label >Image URL</Form.Label>
