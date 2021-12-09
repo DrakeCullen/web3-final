@@ -1,10 +1,10 @@
-# Lost And Found web application created with the MERN Stack
+# Message assistant web application created with the MERN Stack
 
-### I created a lost and found application where users can post pictures and descriptions of items that they lost. Other users will see their posts, and they can contact them if they find the missing item.
+### I created a message assistant application for users who have difficulties typing messages. A caregiver can pre-configure messages, and a user can click the image to send a text message to their caregiver.
 
 <br >
 
-### Access the website at: https://drake-lost-and-found.herokuapp.com/
+### Access the website at: https://web3-message-assistant.herokuapp.com/
 
 <br>
 
@@ -16,7 +16,7 @@
 
 <br/>
 
-![alt text](./imgs/unauthNav.gif)
+![alt text](./imgs/home-screen.gif)
 
 <br> <br>
 
